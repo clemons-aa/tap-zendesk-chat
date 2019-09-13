@@ -14,6 +14,12 @@ setup(name="tap-zendesk-chat",
           "singer-python==3.5.0",
           "requests==2.20.0",
       ],
+      extras_require={
+        'dev': [
+            'ipdb==0.11',
+            'nose',
+        ]
+      },
       entry_points="""
           [console_scripts]
           tap-zendesk-chat=tap_zendesk_chat:main
